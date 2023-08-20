@@ -1,15 +1,31 @@
+import { ReactNode } from "react";
+
 interface Project {
   name: string;
-  description: string;
+  description: ReactNode;
   image?: string;
-  stack: string[];
+  stack: ReactNode[];
 }
 
 export const projects: Project[] = [
   {
     name: "Sintesc",
-    description:
-      "Foi um dos meus primeiros projetos em produção que atuei. O cliente serve como uma cooperativa de motoristas, focado em ajudar a emitir os documentos com facilidade. Minha participação foi a criação de um formulário complexo para cadastro de uma trajetos, contendo integração com API do Google Maps para calcular distancias, tempo que seria percorrido no trajeto, cadastro de passageiros. Além do formulário, criei uma automação que através do formulário anterior, emitia um documento no órgão ANTT.",
+    description: (
+      <div className="space-y-3">
+        <p>
+          Foi o sistema em que comecei a carreira de Desenvolvedor Junior. Meu principal trabalho foi a criação e
+          manutenção de formulários complexos contendo integrações com diferentes APIs, sendo a mais desafiadora a API
+          do Google Maps que foi usada para calculo de tempo decorrido entre paradas e também a distância entre os
+          pontos de uma viagem.
+        </p>
+        <p>
+          Além disso, fui responsável pela manutenção e criação de automações. Com base nos formulários anteriores,
+          criei um RPA que acessa plataformas de órgãos públicos e geram documentos que são usados pelos motoristas
+          participantes da cooperativa.
+        </p>
+        <p>Aprendi muito com o projeto e foi com ele que eu consegui alavancar no Desenvolvimento Web.</p>
+      </div>
+    ),
     stack: ["Laravel", "Nodejs", "Selenium", "Puppeteer"],
   },
   {
