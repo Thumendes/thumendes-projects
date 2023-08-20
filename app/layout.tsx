@@ -24,7 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
           {children}
 
-          <footer className="py-6 container mx-auto max-w-screen-lg">
+          <footer className="py-10 container mx-auto max-w-screen-lg">
             <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight mb-4">Contato</h3>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4">
               <div className="flex flex-col">
