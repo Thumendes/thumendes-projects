@@ -39,7 +39,7 @@ export default function Home() {
         </a>
       </header>
 
-      <section className="flex space-x-6 items-center container mx-auto py-4">
+      <section className="flex space-x-6 items-center container mx-auto py-10 ">
         <Carousel>
           <FaHtml5 size={75} />
           <FaCss3 size={75} />
@@ -65,6 +65,10 @@ export default function Home() {
       </section>
 
       <section className="container mx-auto max-w-screen-lg">
+        <div className="py-8">
+          <h2 className="text-2xl text-muted-foreground">Projetos</h2>
+        </div>
+
         <ul className="flex flex-col space-y-8">
           {projects.map((project) => (
             <li key={project.name}>
