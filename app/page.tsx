@@ -1,5 +1,5 @@
+import { Marquee } from "@devnomic/marquee";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Carousel } from "@/components/ui/carousel";
 import { cn } from "@/lib/utils";
 import { Space_Mono } from "next/font/google";
 import {
@@ -40,28 +40,68 @@ export default function Home() {
       </header>
 
       <section className="flex space-x-6 items-center container mx-auto py-10 ">
-        <Carousel>
-          <FaHtml5 size={75} />
-          <FaCss3 size={75} />
-          <FaJs size={75} />
-          <TbBrandTypescript size={75} />
-          <FaReact size={75} />
-          <FaNodeJs size={75} />
-          <TbBrandReactNative size={75} />
-          <TbBrandNextjs size={75} />
-          <SiNestjs size={75} />
-          <SiPlaywright size={75} />
-          <SiPuppeteer size={75} />
-          <FaGolang size={75} />
-          <TbBrandCSharp size={75} />
-          <FaPhp size={75} />
-          <FaAws size={75} />
-          <FaLaravel size={75} />
-          <TbBrandMysql size={75} />
-          <SiMongodb size={75} />
-          <FaLinux size={75} />
-          <FaJira size={75} />
-        </Carousel>
+        <Marquee fade={true} pauseOnHover={true}>
+          <div className="p-5">
+            <FaHtml5 size={75} />
+          </div>
+          <div className="p-5">
+            <FaCss3 size={75} />
+          </div>
+          <div className="p-5">
+            <FaJs size={75} />
+          </div>
+          <div className="p-5">
+            <TbBrandTypescript size={75} />
+          </div>
+          <div className="p-5">
+            <FaReact size={75} />
+          </div>
+          <div className="p-5">
+            <FaNodeJs size={75} />
+          </div>
+          <div className="p-5">
+            <TbBrandReactNative size={75} />
+          </div>
+          <div className="p-5">
+            <TbBrandNextjs size={75} />
+          </div>
+          <div className="p-5">
+            <SiNestjs size={75} />
+          </div>
+          <div className="p-5">
+            <SiPlaywright size={75} />
+          </div>
+          <div className="p-5">
+            <SiPuppeteer size={75} />
+          </div>
+          <div className="p-5">
+            <FaGolang size={75} />
+          </div>
+          <div className="p-5">
+            <TbBrandCSharp size={75} />
+          </div>
+          <div className="p-5">
+            <FaPhp size={75} />
+          </div>
+          <div className="p-5">
+            <FaAws size={75} />
+          </div>
+          <div className="p-5">
+            <FaLaravel size={75} />
+          </div>
+          <div className="p-5">
+            <TbBrandMysql size={75} />
+          </div>
+          <div className="p-5">
+            <SiMongodb size={75} />
+          </div>
+          <div className="p-5">
+            <FaLinux size={75} />
+          </div>
+          <div className="p-5">
+            <FaJira size={75} />
+          </div>
+        </Marquee>
       </section>
 
       <section className="container mx-auto max-w-screen-lg">

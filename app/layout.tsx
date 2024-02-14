@@ -1,4 +1,5 @@
 import "./globals.css";
+import "@devnomic/marquee/dist/index.css";
 
 import { ModeToggle, ThemeProvider } from "@/components/theme";
 import type { Metadata } from "next";
