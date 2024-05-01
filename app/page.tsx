@@ -119,35 +119,72 @@ export default function Home() {
         </div>
 
         <ul className="flex flex-col space-y-8">
-          <Card>
-            <CardContent className="mt-5 grid grid-cols-2 gap-4">
-              <div className="flex flex-col justify-center space-y-4">
-                <h3 className="text-xl font-semibold">Gerenciamento de pedidos</h3>
+          <li>
+            <Card>
+              <CardContent className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="flex flex-col justify-center space-y-4">
+                  <h3 className="text-xl font-semibold">Gerenciamento de pedidos</h3>
 
-                <p className="text-sm text-muted-foreground">
-                  Projeto para praticar boas práticas de CRUD. Consiste basicamente em 3 tabelas onde é possível
-                  gerenciar clientes, pedidos e menu.
-                </p>
+                  <p className="text-sm text-muted-foreground">
+                    Projeto para praticar boas práticas de CRUD. Consiste basicamente em 3 tabelas onde é possível
+                    gerenciar clientes, pedidos e menu.
+                  </p>
 
-                <div className="flex whitespace-nowrap gap-2 text-3xl">
-                  <TypeScriptLogo />
-                  <ReactLogo />
-                  <NextjsLogo />
-                  <ShadcnUiLogo />
-                  <PrismaLogo />
-                  <MySQLLogo />
-                  <TailwindCSSLogo />
-                  <ReactQueryLogo />
+                  <div className="flex whitespace-nowrap gap-2 text-3xl">
+                    <TypeScriptLogo />
+                    <ReactLogo />
+                    <NextjsLogo />
+                    <ShadcnUiLogo />
+                    <PrismaLogo />
+                    <MySQLLogo />
+                    <TailwindCSSLogo />
+                    <ReactQueryLogo />
+                  </div>
+
+                  <a href="https://github.com/Thumendes/pizzaria-pedidos-crud" about="_blank">
+                    Ver repositório
+                  </a>
                 </div>
 
-                <a href="https://github.com/Thumendes/pizzaria-pedidos-crud" about="_blank">
-                  Ver repositório
-                </a>
-              </div>
+                <Image alt="Gerenciamento de pedidos" src="/images/order-management.png" width={500} height={200} />
+              </CardContent>
+            </Card>
+          </li>
 
-              <Image alt="Gerenciamento de pedidos" src="/images/order-management.png" width={500} height={200} />
-            </CardContent>
-          </Card>
+          <li>
+            <Card>
+              <CardContent className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="flex flex-col justify-center space-y-4">
+                  <h3 className="text-xl font-semibold">Jogo de memória</h3>
+
+                  <p className="text-sm text-muted-foreground">
+                    Projeto criado para um trabalho de enfermagem, onde o objetivo é testar a memória dos pacientes em
+                    dois jogos:
+                  </p>
+                  <ul className="text-sm text-muted-foreground">
+                    <li>Genius: Ordem de sons e cores</li>
+                    <li>Jogo da memória</li>
+                  </ul>
+
+                  <div className="flex whitespace-nowrap gap-2 text-3xl">
+                    <TypeScriptLogo />
+                    <ReactLogo />
+                    <NextjsLogo />
+                    <TailwindCSSLogo />
+                  </div>
+
+                  <a href="https://github.com/Thumendes/memory-games" about="_blank">
+                    Ver repositório
+                  </a>
+                  <a href="https://memory-games-fawn.vercel.app" about="_blank">
+                    Ver projeto
+                  </a>
+                </div>
+
+                <Image alt="Jogo de memória" src="/images/memory-games.png" width={500} height={200} />
+              </CardContent>
+            </Card>
+          </li>
         </ul>
       </section>
 
