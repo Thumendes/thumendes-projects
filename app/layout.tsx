@@ -60,7 +60,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </a>
               </div>
               <div className="flex flex-col">
-                <p className="text-sm text-muted-foreground">E-mail:</p>
+                <p className="text-sm text-muted-foreground">Linkedin:</p>
                 <a
                   className="flex space-x-2 items-center"
                   href="https://www.linkedin.com/in/arthur-mendes-pereira-dev/"

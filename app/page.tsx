@@ -19,6 +19,15 @@ import {
 import { SiMongodb, SiNestjs, SiPlaywright, SiPuppeteer } from "react-icons/si";
 import { TbBrandCSharp, TbBrandMysql, TbBrandNextjs, TbBrandReactNative, TbBrandTypescript } from "react-icons/tb";
 import { projects } from "./data";
+import Image from "next/image";
+import NextjsLogo from "@/components/svgl/nextjs";
+import ShadcnUiLogo from "@/components/svgl/shadcn";
+import PrismaLogo from "@/components/svgl/prisma";
+import MySQLLogo from "@/components/svgl/mysql";
+import TailwindCSSLogo from "@/components/svgl/tailwind";
+import ReactQueryLogo from "@/components/svgl/react-query";
+import ReactLogo from "@/components/svgl/react";
+import TypeScriptLogo from "@/components/svgl/typescript";
 
 const spaceMono = Space_Mono({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -107,6 +116,44 @@ export default function Home() {
       <section className="container mx-auto max-w-screen-lg">
         <div className="py-8">
           <h2 className="text-2xl text-muted-foreground">Projetos</h2>
+        </div>
+
+        <ul className="flex flex-col space-y-8">
+          <Card>
+            <CardContent className="mt-5 grid grid-cols-2 gap-4">
+              <div className="flex flex-col justify-center space-y-4">
+                <h3 className="text-xl font-semibold">Gerenciamento de pedidos</h3>
+
+                <p className="text-sm text-muted-foreground">
+                  Projeto para praticar boas práticas de CRUD. Consiste basicamente em 3 tabelas onde é possível
+                  gerenciar clientes, pedidos e menu.
+                </p>
+
+                <div className="flex whitespace-nowrap gap-2 text-3xl">
+                  <TypeScriptLogo />
+                  <ReactLogo />
+                  <NextjsLogo />
+                  <ShadcnUiLogo />
+                  <PrismaLogo />
+                  <MySQLLogo />
+                  <TailwindCSSLogo />
+                  <ReactQueryLogo />
+                </div>
+
+                <a href="https://github.com/Thumendes/pizzaria-pedidos-crud" about="_blank">
+                  Ver repositório
+                </a>
+              </div>
+
+              <Image alt="Gerenciamento de pedidos" src="/images/order-management.png" width={500} height={200} />
+            </CardContent>
+          </Card>
+        </ul>
+      </section>
+
+      <section className="container mx-auto max-w-screen-lg">
+        <div className="py-8">
+          <h2 className="text-2xl text-muted-foreground">Profissional</h2>
         </div>
 
         <ul className="flex flex-col space-y-8">
